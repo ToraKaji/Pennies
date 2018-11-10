@@ -12,9 +12,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import deepdive.cnm.edu.pennies.R;
 import deepdive.cnm.edu.pennies.view.fragments.Game0;
-import deepdive.cnm.edu.pennies.view.fragments.Game1;
-import deepdive.cnm.edu.pennies.view.fragments.Game2;
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
@@ -76,14 +73,7 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Game0())
             .commit();
         break;
-      case R.id.game_1:
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Game1())
-            .commit();
-        break;
-      case R.id.game_2:
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Game2())
-            .commit();
-        break;
+        
       //TODO add cases
 
     }
