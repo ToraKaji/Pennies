@@ -4,22 +4,25 @@ import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.TypeConverter;
+import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
+import deepdive.cnm.edu.pennies.model.ScratcherDB.Converters;
 import java.util.Date;
 
 @Database(
-    entities = Scratcher.class,
+    entities = {Scratcher.class},
     version = 1,
-    exportSchema = true
+    exportSchema = false
 )
+@TypeConverters(Converters.class)
 public abstract class ScratcherDB extends RoomDatabase {
-
-  private static final String DB_NAME = "scrater_db";
+  private static final String DB_NAME = "text_db";
+  public abstract ScratcherDao getScratcherDao();
 
   private static ScratcherDB instance = null;
-
-  public abstract ScratcherDB getScratcherDAO();
-
+  public synchronized static void forgetInstance() {
+    instance = null;
+  }
   public synchronized static ScratcherDB getInstance(Context context) {
     if (instance == null) {
       instance = Room.databaseBuilder(context.getApplicationContext(), ScratcherDB.class, DB_NAME)
@@ -28,9 +31,6 @@ public abstract class ScratcherDB extends RoomDatabase {
     return instance;
   }
 
-  public synchronized static void forgetInstance() {
-    instance = null;
-  }
 
   public static class Converters {
 
@@ -43,7 +43,6 @@ public abstract class ScratcherDB extends RoomDatabase {
     public static Long longFromDate(Date date) {
       return (date != null) ? date.getTime() : null;
     }
-
   }
-
 }
+
