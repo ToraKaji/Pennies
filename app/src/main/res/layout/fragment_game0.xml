@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context=".view.fragments.Game0"
+  android:padding="10dp"
+  android:background="@drawable/id_game0">
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button0"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/button1"
+    app:layout_constraintBottom_toTopOf="@id/button3"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button1"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintLeft_toRightOf="@id/button0"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/button2"
+    app:layout_constraintBottom_toTopOf="@id/button4"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button2"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintLeft_toRightOf="@id/button1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/button5"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button3"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintTop_toBottomOf="@id/button0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/button4"
+    app:layout_constraintBottom_toTopOf="@id/button6"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button4"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    android:src="@drawable/ic_penny"
+    app:layout_constraintBottom_toTopOf="@id/button7"
+    app:layout_constraintLeft_toRightOf="@id/button3"
+    app:layout_constraintRight_toLeftOf="@id/button5"
+    app:layout_constraintTop_toBottomOf="@id/button1"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button5"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    android:src="@drawable/ic_penny"
+    app:layout_constraintBottom_toTopOf="@id/button8"
+    app:layout_constraintLeft_toRightOf="@id/button4"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/button2"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button6"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintTop_toBottomOf="@id/button3"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/button7"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button7"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/button8"
+    app:layout_constraintTop_toBottomOf="@id/button4"
+    app:layout_constraintLeft_toRightOf="@id/button6"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/button8"
+    android:src="@drawable/ic_penny"
+    android:layout_width="@dimen/penny_size"
+    android:layout_height="@dimen/penny_size"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/button5"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/button7"/>
+
+ </android.support.constraint.ConstraintLayout>
