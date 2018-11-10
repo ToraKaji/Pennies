@@ -21,6 +21,7 @@
   <TextView
     android:id="@+id/button0_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button0"
     app:layout_constraintRight_toRightOf="@id/button0"
@@ -40,6 +41,7 @@
   <TextView
     android:id="@+id/button1_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button1"
     app:layout_constraintRight_toRightOf="@id/button1"
@@ -59,6 +61,7 @@
   <TextView
     android:id="@+id/button2_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button2"
     app:layout_constraintRight_toRightOf="@id/button2"
@@ -78,6 +81,7 @@
   <TextView
     android:id="@+id/button3_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button3"
     app:layout_constraintRight_toRightOf="@id/button3"
@@ -97,6 +101,7 @@
   <TextView
     android:id="@+id/button4_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button4"
     app:layout_constraintRight_toRightOf="@id/button4"
@@ -116,6 +121,7 @@
   <TextView
     android:id="@+id/button5_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button5"
     app:layout_constraintRight_toRightOf="@id/button5"
@@ -135,6 +141,7 @@
   <TextView
     android:id="@+id/button6_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button6"
     app:layout_constraintRight_toRightOf="@id/button6"
@@ -154,6 +161,7 @@
   <TextView
     android:id="@+id/button7_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button7"
     app:layout_constraintRight_toRightOf="@id/button7"
@@ -173,6 +181,7 @@
   <TextView
     android:id="@+id/button8_val"
     android:layout_width="wrap_content"
+    android:textSize="@dimen/value_textsize"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="@id/button8"
     app:layout_constraintRight_toRightOf="@id/button8"
@@ -180,4 +189,5 @@
     app:layout_constraintTop_toTopOf="@id/button8"
     android:visibility="invisible"
     />
+
  </android.support.constraint.ConstraintLayout>
