@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity
 
     //noinspection SimplifiableIfStatement
 
-
     return super.onOptionsItemSelected(item);
   }
 
@@ -70,10 +69,11 @@ public class MainActivity extends AppCompatActivity
   public boolean onNavigationItemSelected(MenuItem item) {
     switch (item.getItemId()) {
       case R.id.game_0:
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Game0())
+        getSupportFragmentManager().beginTransaction().addToBackStack("game0")
+            .replace(R.id.fragment_container, new Game0())
             .commit();
         break;
-        
+
       //TODO add cases
 
     }
